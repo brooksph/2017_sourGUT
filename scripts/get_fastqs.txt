@@ -1,0 +1,4 @@
+for is in cat $(../scripts/SRA_IDs.tx)
+do 
+	fastq-dump --outdir fastq --gzip --skip-technical  --readids --read-filter pass --dumpbase --split-files --clip $i
+done
